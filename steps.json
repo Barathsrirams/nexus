@@ -1,0 +1,30 @@
+[
+  {
+    "id": "step-mgr-1",
+    "workflow_id": "workflow-expense-1",
+    "name": "Manager Approval",
+    "step_type": "approval",
+    "order": 1
+  },
+  {
+    "id": "step-fin-2",
+    "workflow_id": "workflow-expense-1",
+    "name": "Finance Notification",
+    "step_type": "notification",
+    "order": 2
+  },
+  {
+    "id": "step-ceo-3",
+    "workflow_id": "workflow-expense-1",
+    "name": "CEO Approval",
+    "step_type": "approval",
+    "order": 3
+  },
+  {
+    "id": "step-rej-4",
+    "workflow_id": "workflow-expense-1",
+    "name": "Task Rejection",
+    "step_type": "task",
+    "order": 4
+  }
+]

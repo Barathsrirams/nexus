@@ -1,0 +1,113 @@
+[
+  {
+    "id": "f01c8beb-84ad-492a-a03e-ffb075e0535a",
+    "workflow_id": "workflow-expense-1",
+    "status": "failed",
+    "logs": [
+      {
+        "timestamp": "2026-03-15T13:21:40.121Z",
+        "level": "INFO",
+        "message": "Started execution for workflow: workflow-expense-1"
+      },
+      {
+        "timestamp": "2026-03-15T13:21:40.123Z",
+        "level": "INFO",
+        "message": "[Step: Manager Approval] Evaluating rules..."
+      },
+      {
+        "timestamp": "2026-03-15T13:21:40.124Z",
+        "level": "INFO",
+        "message": "Evaluating condition: \"amount > 100 && country == 'US' && priority == 'High'\""
+      },
+      {
+        "timestamp": "2026-03-15T13:21:40.126Z",
+        "level": "INFO",
+        "message": "Condition false."
+      },
+      {
+        "timestamp": "2026-03-15T13:21:40.127Z",
+        "level": "INFO",
+        "message": "Evaluating condition: \"amount <= 100 || department == 'HR'\""
+      },
+      {
+        "timestamp": "2026-03-15T13:21:40.128Z",
+        "level": "INFO",
+        "message": "Condition false."
+      },
+      {
+        "timestamp": "2026-03-15T13:21:40.129Z",
+        "level": "INFO",
+        "message": "Evaluating condition: \"priority == 'Low' && country != 'US'\""
+      },
+      {
+        "timestamp": "2026-03-15T13:21:40.130Z",
+        "level": "INFO",
+        "message": "Condition false."
+      },
+      {
+        "timestamp": "2026-03-15T13:21:40.131Z",
+        "level": "INFO",
+        "message": "No priority rules matched. Using DEFAULT next step: step-rej-4"
+      },
+      {
+        "timestamp": "2026-03-15T13:21:40.237Z",
+        "level": "INFO",
+        "message": "[Step: Task Rejection] Evaluating rules..."
+      },
+      {
+        "timestamp": "2026-03-15T13:21:40.238Z",
+        "level": "ERROR",
+        "message": "No rules matched and no DEFAULT found. Terminating."
+      }
+    ],
+    "amount": 200000,
+    "country": "india",
+    "department": "computer science",
+    "priority": "developer",
+    "started_at": "2026-03-15T13:21:40.118Z",
+    "updated_at": "2026-03-15T13:21:40.239Z"
+  },
+  {
+    "id": "e39bb022-1fc7-4475-bfa3-2f9e9edf5c93",
+    "workflow_id": "workflow-expense-1",
+    "status": "failed",
+    "logs": [
+      {
+        "timestamp": "2026-03-15T15:35:21.346Z",
+        "level": "INFO",
+        "message": "Started execution for workflow: workflow-expense-1"
+      },
+      {
+        "timestamp": "2026-03-15T15:35:21.348Z",
+        "level": "INFO",
+        "message": "[Step: Manager Approval] Evaluating rules..."
+      },
+      {
+        "timestamp": "2026-03-15T15:35:21.349Z",
+        "level": "INFO",
+        "message": "Evaluating condition: \"amount > 100 && country == 'US' && priority == 'High'\""
+      },
+      {
+        "timestamp": "2026-03-15T15:35:21.351Z",
+        "level": "INFO",
+        "message": "Rule matched! Proceeding to next step: step-fin-2"
+      },
+      {
+        "timestamp": "2026-03-15T15:35:21.456Z",
+        "level": "INFO",
+        "message": "[Step: Finance Notification] Evaluating rules..."
+      },
+      {
+        "timestamp": "2026-03-15T15:35:21.457Z",
+        "level": "ERROR",
+        "message": "No rules matched and no DEFAULT found. Terminating."
+      }
+    ],
+    "amount": 250,
+    "country": "US",
+    "department": "Sales",
+    "priority": "High",
+    "started_at": "2026-03-15T15:35:21.343Z",
+    "updated_at": "2026-03-15T15:35:21.459Z"
+  }
+]
